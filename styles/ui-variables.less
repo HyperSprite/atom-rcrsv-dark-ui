@@ -1,0 +1,120 @@
+
+// UI Variables
+// -------------------
+
+// These are the official UI variables that every UI theme should define.
+// It allows other packages to match your theme.
+
+// Overrides: atom/static/variables/ui-variables.less
+
+// Try to edit some of the values below to see your theme change.
+// A good start is to change the color of the `@base-background-color` variable.
+
+// http://hslpicker.com
+// mint: hsl(178, 57%, 41%);
+// blue: hsl(202, 39%, 49%);
+// goldenrod: hsl(44, 45%, 50%);
+@base0: darken(@base3, 2%);
+@base1: hsl(180, 7%, 60%); // #93a1a1;
+@base2: hsl(46, 42%, 88%); // #eee8d5;
+@base3: hsl(60, 36%, 96%); // #f8f8f0;
+@base03: hsl(0, 100%, 13%); // #400000
+@base02: hsl(0, 100%, 25%); // #800000;
+@base01: hsl(194, 14%, 40%); // #586e75;
+@base00: hsl(43, 36%, 69%); // #CCBC93;
+@base11: hsl(53, 8%, 21%); // #3b3a32;
+@base12: hsl(0, 35%, 60%); // #bd7575;
+@base13: hsl(175, 59%, 40%); // #2AA198;
+@base14: hsl(68, 100%, 93%); // #FAFFDB;
+@base15: hsl(49, 55%, 51%); // #C7AF3F;
+@base16: hsl(212, 50%, 68%); // #83AAD6;
+@base17: hsl(206, 36%, 62%); // #7CA4C2;
+@base18: hsl(206, 22%, 69%); // #9FB3C2;
+@base19: hsl(162, 24%, 68%); // #9BC2B6;
+@base20: hsl(125, 41%, 66%); // #85CC8B;
+@base21: hsl(45, 100%, 35%); // #b58900;
+@base22: hsl(0, 100%, 37%); // #bb0000;
+@base23: hsl(56, 44%, 75%); // #dbd7a3;
+
+// Text Colors
+@text-color:           @base00; // 44, 45%, 49%); // 44, 45%, 49%); // 0,0%,66%);
+@text-color-subtle:    @base21; // 0, 0%, 100%);
+@text-color-highlight: darken(@base00, 5%); // 44, 100%, 44%); // 0,0%,94%);
+@text-color-selected:  @base15; // hsl(45, 47%, 57%); // 0,0%,100%);
+
+@text-color-info:    @base13; // 219,  79%, 66%);
+@text-color-success: @base20; // 140,  44%, 62%);
+@text-color-warning: @base21; // 36,  60%, 72%);
+@text-color-error:   @base22; // 9, 100%, 64%);
+
+// Background colors
+@background-color-info:    hsl(0, 100%, 22%); // 208, 100%, 50%);
+@background-color-success: hsl(120, 100%, 22%); // 160,  70%, 36%);
+@background-color-warning: hsl(45, 100%, 50%); // 32,   60%, 50%);
+@background-color-error:   hsl(29, 100%, 42%); // 0,    70%, 50%);
+
+@background-color-highlight: lighten(@base-background-color, 4%);
+@background-color-selected:  lighten(@base-background-color, 6%);
+@app-background-color:       darken(@base-background-color, 10%);
+
+// Base colors
+// @base-background-color: hsl(0, 100%, 13%);
+@base-background-color: hsl(0, 100%, 9%);
+@base-border-color:     darken(@base-background-color, 3%); // 8%
+
+// Component colors
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color:     @base-border-color;
+
+@input-background-color: @app-background-color;
+@input-border-color:     @base-border-color;
+
+@tool-panel-background-color: @base-background-color;
+@tool-panel-border-color:     @base-border-color;
+
+@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-border-color:     @base-border-color;
+
+@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-border-color:     @base-border-color;
+
+@overlay-background-color: lighten(@base-background-color, 5%);
+@overlay-border-color:     @base-border-color;
+
+@button-background-color:          lighten(@base-background-color, 10%);
+@button-background-color-hover:    lighten(@base-background-color, 20%);
+@button-background-color-selected: lighten(@base-background-color, 14%);
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:    @base-background-color;
+@tab-bar-border-color:        @base-border-color;
+@tab-background-color:        @tab-bar-background-color;
+@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-border-color:            @base-border-color;
+
+@tree-view-background-color: darken(@base-background-color, 2%);
+@tree-view-border-color:     @base-border-color;
+
+// Site colors
+@ui-site-color-1: hsl(208, 100%, 50%); // blue
+@ui-site-color-2: hsl(160,  70%, 42%); // green
+@ui-site-color-3: hsl(32,   60%, 50%); // orange
+@ui-site-color-4: #D831B0;             // pink
+@ui-site-color-5: #EBDD5B;             // yellow
+
+// Sizes
+@font-size: 12px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+
+@tab-height: 30px;
+
+// Misc
+@component-border-radius: 2px;
+@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
