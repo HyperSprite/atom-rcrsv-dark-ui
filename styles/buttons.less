@@ -30,13 +30,21 @@
 
 // Colored buttons -----------------------
 
-.btn.btn-primary { .btn-color(@background-color-info, @text-color-selected); }
-.btn.btn-info    { .btn-color(@background-color-info, @text-color-selected); }
-.btn.btn-success { .btn-color(@background-color-success, @base-background-color); }
+.btn.btn-primary {
+  .btn-color(@background-color-info, @text-color-selected); 
+}
+.btn.btn-info    {
+  .btn-color(@background-color-info, @text-color-selected);
+}
+.btn.btn-success {
+  .btn-color(@background-color-success, @base-background-color);
+}
 .btn.btn-warning {
   .btn-color(@background-color-warning, @base-background-color);
 }
-.btn.btn-error   { .btn-color(@background-color-error, @base-background-color); }
+.btn.btn-error   {
+  .btn-color(@background-color-error, @base-background-color);
+}
 
 .btn-color(@bg, @tx) {
   color: @tx;
@@ -56,7 +64,6 @@
     background-color: lighten(@bg, 8%);
   }
 }
-
 
 // Button Group -----------------------
 

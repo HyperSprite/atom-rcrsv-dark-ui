@@ -26,21 +26,27 @@
 @base12: hsl(0, 35%, 60%); // #bd7575;
 @base13: hsl(175, 59%, 40%); // #2AA198;
 @base14: hsl(68, 100%, 93%); // #FAFFDB;
+@base14F70: fade(@base14, 70%);
 @base15: hsl(49, 55%, 51%); // #C7AF3F;
+@base15L10: lighten(@base15, 10%);
+@base15F70: fade(@base15, 70%);
 @base16: hsl(212, 50%, 68%); // #83AAD6;
 @base17: hsl(206, 36%, 62%); // #7CA4C2;
 @base18: hsl(206, 22%, 69%); // #9FB3C2;
 @base19: hsl(162, 24%, 68%); // #9BC2B6;
 @base20: hsl(125, 41%, 66%); // #85CC8B;
 @base21: hsl(45, 100%, 35%); // #b58900;
+@base21L10: lighten(@base21, 10%);
+@base21L20: lighten(@base21, 20%);
+@base21F70: fade(@base21, 70%);
 @base22: hsl(0, 100%, 37%); // #bb0000;
 @base23: hsl(56, 44%, 75%); // #dbd7a3;
 
 // Text Colors
-@text-color:           @base00; // 44, 45%, 49%); // 44, 45%, 49%); // 0,0%,66%);
-@text-color-subtle:    @base21; // 0, 0%, 100%);
+@text-color:           @base14F70; // 44, 45%, 49%); // 44, 45%, 49%); // 0,0%,66%);
+@text-color-subtle:    @base21F70; // 0, 0%, 100%);
 @text-color-highlight: darken(@base00, 5%); // 44, 100%, 44%); // 0,0%,94%);
-@text-color-selected:  @base15; // hsl(45, 47%, 57%); // 0,0%,100%);
+@text-color-selected:  @base14; // hsl(45, 47%, 57%); // 0,0%,100%);
 
 @text-color-info:    @base13; // 219,  79%, 66%);
 @text-color-success: @base20; // 140,  44%, 62%);
@@ -54,7 +60,7 @@
 @background-color-error:   hsl(29, 100%, 42%); // 0,    70%, 50%);
 
 @background-color-highlight: lighten(@base-background-color, 4%);
-@background-color-selected:  lighten(@base-background-color, 6%);
+@background-color-selected:  lighten(@base-background-color, 20%);
 @app-background-color:       darken(@base-background-color, 10%);
 
 // Base colors
@@ -83,7 +89,7 @@
 
 @button-background-color:          lighten(@base-background-color, 10%);
 @button-background-color-hover:    lighten(@base-background-color, 20%);
-@button-background-color-selected: lighten(@base-background-color, 14%);
+@button-background-color-selected: lighten(@base-background-color, 15%);
 @button-border-color:              @base-border-color;
 
 @tab-bar-background-color:    @base-background-color;
