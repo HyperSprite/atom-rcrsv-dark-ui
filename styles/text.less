@@ -17,15 +17,15 @@
 
 // Highlights ---------------
 
-.highlight         { .highlight-mixin(@background-color-highlight); }
-.highlight-info    { .highlight-mixin(@background-color-info); }
-.highlight-warning { .highlight-mixin(@background-color-warning); }
-.highlight-error   { .highlight-mixin(@background-color-error); }
-.highlight-success { .highlight-mixin(@background-color-success); }
+.highlight         { .highlight-mixin(@background-color-highlight, @text-color-highlight); }
+.highlight-info    { .highlight-mixin(@background-color-info, @text-color-highlight); }
+.highlight-warning { .highlight-mixin(@background-color-warning, @background-color-info); }
+.highlight-error   { .highlight-mixin(@background-color-error, @background-color-info); }
+.highlight-success { .highlight-mixin(@background-color-success, @text-color-highlight); }
 
-.highlight-mixin(@color) {
+.highlight-mixin(@color, @text) {
   padding: 1px 4px;
-  color: @text-color-highlight;
+  color: @text;
   border-radius: @component-border-radius;
   background-color: @color;
 }
